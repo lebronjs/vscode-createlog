@@ -1,0 +1,45 @@
+{
+    "name": "createlog",
+    "displayName": "createlog",
+    "description": "This is a test extensions for creating a present empty log text",
+    "version": "1.0.0",
+    "publisher": "lebronjs",
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:testytest.createlog"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "testytest.createlog",
+                "title": "Create Log Now"
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.47.0",
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^13.11.0",
+        "eslint": "^6.8.0",
+        "glob": "^7.1.6",
+        "mocha": "^7.1.2",
+        "typescript": "^3.8.3",
+        "vscode-test": "^1.3.0"
+    },
+    "dependencies": {
+        "moment": "^2.27.0"
+    }
+}
