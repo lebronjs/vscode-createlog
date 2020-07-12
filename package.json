@@ -5,6 +5,10 @@
     "version": "1.0.0",
     "publisher": "lebronjs",
     "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lebronjs/vscode-createlog"
+    },
     "engines": {
         "vscode": "^1.47.0"
     },
